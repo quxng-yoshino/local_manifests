@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="quxng" fetch="https://github.com/quxng-yoshino" />
-  <default revision="lineage-23.2" remote="quxng" />
+  <remote name="quxng" fetch="https://github.com/quxng-yoshino" revision="lineage-23.2" />
 
   <!-- Device -->
   <project path="device/sony/yoshino-common" name="android_device_sony_yoshino-common" remote="quxng" />
