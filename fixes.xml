@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <!-- Soong: fsgen support for squashfs vendor -->
   <remove-project name="LineageOS/android_build_soong" />
   <project path="build/soong"
            name="android_build_soong"
            remote="quxng"
-           revision="lineage-23.2">
+           revision="lineage-23.2"
+           groups="pdk,tradefed,sysui-studio">
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+
+  <!-- Connectivity: NetBpfLoad/netd support for 4.4 kernels -->
+  <remove-project name="LineageOS/android_packages_modules_Connectivity" />
+  <project path="packages/modules/Connectivity"
+           name="android_packages_modules_Connectivity"
+           remote="quxng"
+           revision="lineage-23.2"
+           groups="pdk-cw-fs,pdk-fs" />
 </manifest>
