@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Soong: fsgen support for squashfs vendor -->
+  <remove-project name="PixelOS-AOSP/android_build_soong" />
+  <project path="build/soong" name="pixelos_build_soong" remote="quxng" revision="sixteen-qpr2" groups="pdk,tradefed,sysui-studio">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Connectivity: NetBpfLoad/netd support for 4.4 kernels -->
+  <remove-project name="PixelOS-AOSP/android_packages_modules_Connectivity" />
+  <project path="packages/modules/Connectivity" name="pixelos_packages_modules_Connectivity" remote="quxng" revision="sixteen-qpr2" groups="pdk-cw-fs,pdk-fs" />
+</manifest>
