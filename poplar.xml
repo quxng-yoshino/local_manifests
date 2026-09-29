@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Shared yoshino repos (common, kernel, common vendor, hardware/sony) come from maple.xml -->
+
+  <!-- Device -->
+  <project path="device/sony/poplar" name="android_device_sony_poplar" remote="quxng" revision="sixteen-qpr2" />
+
+  <!-- Vendor -->
+  <project path="vendor/sony/poplar" name="proprietary_vendor_sony_poplar" remote="quxng" />
+</manifest>
