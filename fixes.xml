@@ -18,4 +18,11 @@
            remote="quxng"
            revision="lineage-23.2"
            groups="pdk-cw-fs,pdk-fs" />
+  <!-- libmeminfo: don't abort system_server without the gpuMem BPF map (4.4) -->
+  <remove-project name="platform/system/memory/libmeminfo" />
+  <project path="system/memory/libmeminfo"
+           name="android_system_memory_libmeminfo"
+           remote="quxng"
+           revision="lineage-23.2"
+           groups="pdk" />
 </manifest>
